@@ -47,6 +47,41 @@ body {
 }
 /* End global rules */
 /* start main items */
+/* arrow up */
+.arrow {
+    position: fixed; 
+    z-index: 20000;
+    bottom: 10px;
+    right: -30px;
+    color: white; 
+    padding: 10px; 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--main-transition);
+    transform: rotate(360deg);
+}
+.arrow.show {
+    right: 20px;
+    transform: rotate(0deg);
+
+}
+/* Progress-height*/
+.Progress-height {
+    height: 10px;
+    border-radius: 3px;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-color-alt);
+    z-index: 20000;
+}
 /*  title */
 .main-title {
     text-transform: uppercase;
@@ -817,6 +852,7 @@ header .mega-menu ul li a i {
     display: block;
     height: 30px;
     background-color: var(--main-color);
+    transition: 2s;
 }
 /* end our-skilles */
 /* Start how in works */
@@ -1292,6 +1328,7 @@ header .mega-menu ul li a i {
 .stats .container .box span {
     font-weight: bold;
     font-size: 50px;
+    transition: 0.2s;
 }
 .stats .container .box p {
     margin:0;
@@ -1535,30 +1572,7 @@ footer .copyright i {
     color: red;
     margin:0 2px;
 }
-footer .days {
-    position: absolute;
-    position: absolute;
-    z-index: 200;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    background-color: #191919;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-footer .days h2:first-of-type {
-    font-size: 60px;
-    letter-spacing: -1px;;
-    margin-bottom: 0;
-}
-footer .days h2:last-of-type {
-    margin-top: 5px;
-    color: var(--main-color);
-    
-}
+
 /* ENd footer */
 /* Start animation */
 /* for img in landing */

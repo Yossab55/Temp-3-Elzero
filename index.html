@@ -17,6 +17,8 @@
 
 </head>
 <body>
+    <span class="arrow"><i class="fa-solid fa-arrow-up fa-lg"></i></span>
+    <div class="Progress-height" style="width: 0%;"></div>
     <!-- Start header -->
     <header id="header">
         <div class="container">
@@ -610,27 +612,27 @@
             <img src="images/skills.png" alt="">
             <div class="skills">
                 <div class="skill">
-                    <h3>HTML<span>80%</span></h3>
+                    <h3>HTML<span class="width-skill">80%</span></h3>
                     <div class="the-progress">
-                        <span style=" width: 80%"></span>
+                        <span style=" width: 0%"></span>
                     </div>
                 </div>
                 <div class="skill">
-                    <h3>CSS<span>85%</span></h3>
+                    <h3>CSS<span class="width-skill">85%</span></h3>
                     <div class="the-progress">
-                        <span style=" width: 85%"></span>
+                        <span style=" width: 0%"></span>
                     </div>
                 </div>
                 <div class="skill">
-                    <h3>JavaScript<span>80%</span></h3>
+                    <h3>JavaScript<span class="width-skill">80%</span></h3>
                     <div class="the-progress">
-                        <span style=" width: 80%"></span>
+                        <span style=" width: 0%"></span>
                     </div>
                 </div>
                 <div class="skill">
-                    <h3>Paython<span>90%</span></h3>
+                    <h3>Paython<span class="width-skill">90%</span></h3>
                     <div class="the-progress">
-                        <span style=" width: 90%"></span>
+                        <span style=" width: 0%"></span>
                     </div>
                 </div>
             </div>
@@ -833,22 +835,22 @@
         <div class="container">
             <div class="box">
                 <i class="fa-regular fa-user"></i>
-                <span>150</span>
+                <span data-goal="150">0</span>
                 <p>Clients</p>
             </div>
             <div class="box">
                 <i class="fa-solid fa-code"></i>
-                <span>135</span>
+                <span data-goal="135">0</span>
                 <p>Projects</p>
             </div>
             <div class="box">
                 <i class="fa-solid fa-earth-americas"></i>
-                <span>50</span>
+                <span data-goal="50">0</span>
                 <p>Countries</p>
             </div>
             <div class="box">
                 <i class="fa-regular fa-money-bill-1"></i>
-                <span>500</span>
+                <span data-goal="500">0</span>
                 <p>Money</p>
             </div>
         </div>
@@ -920,11 +922,9 @@
             </div>
         </div>
         <p class="copyright">Made By <i class="fa-solid fa-heart"></i> With Yossab_Samouel</p>
-        <div class="days">
-            <h2>4 Days Left</h2>
-            <h2>يا مغفلة</h2>
-        </div>
+        
     </footer>
     <!-- End footer -->
+    <script src="main.js"></script>
 </body>
 </html>
